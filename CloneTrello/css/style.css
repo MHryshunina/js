@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.trello-block-heading {
+    overflow-wrap: anywhere;
+}
+
+.trello-heading {
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    background: rgb(121, 157, 255);
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.trello-heading-text {
+    color: rgb(0, 0, 44);
+    font-size: 2rem;
+    margin: 25px;
+}
+
+#trello-button {
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+    font-weight: 100;
+    background: #fff;
+    border-radius: 0.2rem;
+    border: none;
+    font-weight: bold;
+    color: rgb(0, 0, 44);
+}
+
+.type-board {
+    height: 30px;
+}
+
+.trello-board {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    margin: 5px;
+    font-family: sans-serif;
+}
+
+.trello-block {
+    position: relative;
+    padding: 0.5rem;
+    width: 40%;
+    max-width: 200px;
+    min-height: 4.5rem;
+    border-radius: 0.3rem;
+    margin: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 5px rgb(241, 241, 241);
+}
+
+.trello-block-heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.trello-block-heading-btn {
+    position: relative;
+    top: -5px;
+    width: 22px;
+    height: 22px;
+    font-size: large;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+.trello-block-body {
+    margin: 20px 0 50px 0;
+}
+
+.tasks__list {
+    list-style: none;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    margin: 0.2rem 0rem 1rem 0rem;
+    border: 2px solid rgb(12, 12, 12);
+    border-radius: 0.2rem;
+    padding: 0.4rem;
+    cursor: move;
+    overflow-wrap: anywhere;
+}
+
+.delete-task-button {
+    padding: 5px 7px;
+    height: 25px;
+    margin-left: 5px;
+    color: #fff;
+    background-color: rgb(189, 0, 0);
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+.selected {
+    background-color: rgb(255, 175, 175);
+    opacity: 0.6;
+}
+
+.task-button-block {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.task-button {
+    padding: 0.4rem;
+    background: rgb(121, 157, 255);
+    border-radius: 0.2rem;
+    border: none;
+    font-weight: bold;
+    color: rgb(0, 0, 44);
+}
+
+.new-task-item {
+    width: 100%;
+    margin-right: 5px;
+}
+
+.new-board-item,
+.trello-button {
+    padding: 5px;
+}
+
+.modal-wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    width: 400px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.modal-header {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.modal-body {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+
+.modal-footer {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.btn {
+    width: 100px;
+    height: 30px;
+    font-weight: 900;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 20px;
+    cursor: pointer;
+}
+
+.btn-confirm {
+    background-color: blueviolet;
+}
+
+.btn-delete {
+    background-color: rgb(189, 0, 0);
+}
+
+.btn-close {
+    width: 50px;
+    font-size: 25px;
+    background-color: royalblue;
+}

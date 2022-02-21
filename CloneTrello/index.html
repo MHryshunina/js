@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone Trello</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="trello-heading">
+            <strong class="trello-heading-text" ondblclick="editingNameBoard()" contenteditable="true">Clone Trello Board</strong>
+            <div class="trello-button-block">
+                <!-- <input type="text" class="new-board-item" placeholder="New board..."> -->
+                <select class="type-board">
+                    <option>board</option>
+                    <option>calendar</option>
+                  </select>
+                <button class="trello-button" onclick="addBoard(this)">Add new board</button>
+            </div>
+        </div>
+        <div class="trello-board">
+            <div class="trello-block">
+                <div class="trello-block-heading">
+                    <strong class="trello-block-heading-text" contenteditable="true">To Do</strong>
+                    <button class="trello-block-heading-btn" onclick="changeBoard(this)">...</button>
+                </div>
+                <div class="trello-block-body">
+                    <ul class="tasks__list">
+                        <li class="task" draggable="true"><span>Task 1</span><button onclick="deleteTask(this)" class="delete-task-button">&times;</button></li>
+                        <li class="task" draggable="true"><span>Task 2</span><button onclick="deleteTask(this)" class="delete-task-button">&times;</button></li>
+                    </ul>
+                </div>
+                <div class="task-button-block">
+                    <input type="text" class="new-task-item" placeholder="Another task...">
+                    <button class="task-button" onclick="addTask(this)">Add</button>
+                </div>
+            </div>
+            <div class="trello-block">
+                <div class="trello-block-heading">
+                    <strong class="trello-block-heading-text" contenteditable="true">In Progress</strong>
+                    <button class="trello-block-heading-btn" onclick="changeBoard(this)">...</button>
+                </div>
+                <div class="trello-block-body">
+                    <ul class="tasks__list">
+                        <li class="task" draggable="true"><span>Task 1</span><button onclick="deleteTask(this)" class="delete-task-button">&times;</button></li>
+                        <li class="task" draggable="true"><span>Task 1</span><button onclick="deleteTask(this)" class="delete-task-button">&times;</button></li>
+                        <li class="task" draggable="true"><span>Task 1</span><button onclick="deleteTask(this)" class="delete-task-button">&times;</button></li>
+                    </ul>
+                </div>
+                <div class="task-button-block">
+                    <input type="text" class="new-task-item" placeholder="Another task...">
+                    <button class="task-button" onclick="addTask(this)">Add</button>
+                </div>
+            </div>
+            <div class="trello-block">
+                <div class="trello-block-heading">
+                    <strong class="trello-block-heading-text" contenteditable="true">Done</strong>
+                    <button class="trello-block-heading-btn" onclick="changeBoard(this)">...</button>
+                </div>
+                <div class="trello-block-body">
+                    <ul class="tasks__list">
+                        <li class="task" draggable="true"><span>Task 1</span><button onclick="deleteTask(this)" class="delete-task-button">&times;</button></li>
+                    </ul>
+                </div>
+                <div class="task-button-block">
+                    <input type="text" class="new-task-item" placeholder="Another task...">
+                    <button class="task-button" onclick="addTask(this)">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
